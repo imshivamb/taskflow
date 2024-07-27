@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "lib": ["es2017", "esnext.asynciterable"],
+      "declaration": true,
+      "composite": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "strict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "exclude": ["node_modules"]
+  }

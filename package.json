@@ -6,7 +6,11 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push --skip-generate",
+    "db:studio": "turbo run db:studio",
+    "db:seed": "turbo run db:seed"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
@@ -21,5 +25,10 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "axios": "^1.7.2",
+    "express": "^4.19.2"
+  }
 }
